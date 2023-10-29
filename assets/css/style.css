@@ -1623,3 +1623,12 @@ section {
     margin: 20px 0;
     line-height: 25px;
 }
+
+.justy{
+  text-align: justify;
+  color: #000;
+}
+
+img{
+  border: 5px solid black;
+}
