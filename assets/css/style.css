@@ -364,17 +364,27 @@ h6 {
 }
 
 #hero h2 {
-  color: #fff;
+  color: #000000;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
 }
 
 #hero p {
-  width: 80%;
+  width: 100%;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
+  font-size: 20px;
+  /* margin: 0 auto 30px auto; */
+  color: #000000;
+}
+
+#hero ol li {
+  width: 100%;
+  animation-delay: 0.4s;
+  text-align: left;
+  font-size: 20px;
+  /* margin: 0 auto 30px auto; */
+  color: #000000;
 }
 
 #hero .carousel-control-prev,
@@ -415,7 +425,7 @@ h6 {
 
 @media (min-width: 1024px) {
   #hero p {
-    width: 60%;
+    width: 80%;
   }
 
   #hero .carousel-control-prev,
@@ -426,12 +436,16 @@ h6 {
 
 @media (max-width: 768px) {
   #hero .carousel-container {
-    height: 90vh;
+    height: 110vh;
   }
 
   #hero h2 {
     font-size: 28px;
   }
+
+  .popup {
+    padding: 40px;
+}
 }
 
 .hero-waves {
@@ -1596,7 +1610,7 @@ section {
     /* background:url("assets/img/dashboard/1.jpg"); */
 
     width: 450px;
-    padding: 30px 40px;
+    /* padding: 30px 40px; */
     position: fixed;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -1619,9 +1633,9 @@ section {
 }
 .popup p{
     font-size: 14px;
-    text-align: justify;
+    /* text-align: justify;
     margin: 20px 0;
-    line-height: 25px;
+    line-height: 25px; */
 }
 
 .justy{
