@@ -1,0 +1,55 @@
+
+  
+      img{
+        height: 40em;
+        width: 600px;
+      }
+      /* Add any additional styles here */
+      /* .slick-prev, .slick-next {
+        font-size: 24px;
+      } */
+  
+     
+      /* Add any additional styles here */
+      .slick-prev,
+      .slick-next {
+        font-size: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        color: rgb(0, 0, 0); /* Adjust text color */
+        
+        border: none;
+        padding: 10px;
+      }
+  
+      .slick-prev {
+        left: 50px;
+      }
+  
+      .slick-next {
+        right: 50px;
+      }
+  
+      .slick-prev:before,
+  .slick-next:before
+  {
+      font-family: 'slick';
+      font-size: 50px;
+      line-height: 1;
+  
+      opacity: .75;
+      color: rgb(0, 0, 0);
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  .img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

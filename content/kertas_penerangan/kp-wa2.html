@@ -42,6 +42,13 @@
 
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link href="/assets/css/slider.css" rel="stylesheet" />
+    
+  
+  
     <!-- =======================================================
   * Template Name: Selecao
   * Updated: May 30 2023 with Bootstrap v5.3.0
@@ -198,52 +205,41 @@
                     <p>Lakaran figura lazimnya digunakan oleh pereka fesyen untuk berinteraksi dengan bentuk badan manusia atau pelanggan. Lakaran yang asasnya kemudian ditambahkan dengan idea, konsep, reka bentuk dan elemen rekaan dalam penghasilan sesebuah pakaian.
                     </p>
 
-                    <div class="card mb-4">
-                      <img
-                        src="/assets/img/content/kp16.jpg"
-                        class="card-img-top"
-                      />
-                      
-                    </div>
 
-                        <div class="card mb-4">
-                            <img
-                            src="/assets/img/content/kp16b.jpg"
-                            class="card-img-top"
-                            />
-                            
+                    
+                      <div class="slider">
+                        <div class=" mb-4" style="position: relative;">
+                          <img src="/assets/img/content/kp16.jpg" class="img-center" alt="Image 1">
+                          <button class="slick-prev"> </button>
+                          <button class="slick-next"> </button>
                         </div>
-                        <div class="card mb-4">
-                            <img
-                            src="/assets/img/content/kp17a.jpg"
-                            class="card-img-top"
-                            />
-                            
+                        <div class=" mb-4" style="position: relative;">
+                          <img src="/assets/img/content/kp16b.jpg" class="img-center" alt="Image 2">
+                          <button class="slick-prev"></button>
+                          <button class="slick-next"> </button>
                         </div>
-                        <div class="card mb-4">
-                            <img
-                            src="/assets/img/content/kp17b.jpg"
-                            class="card-img-top"
-                            />
-                            
+
+                        <div class=" mb-4" style="position: relative;">
+                          <img src="/assets/img/content/kp17a.jpg" class="img-center" alt="Image 2">
+                          <button class="slick-prev"></button>
+                          <button class="slick-next"> </button>
                         </div>
-                        <div class="card mb-4">
-                            <img
-                            src="/assets/img/content/kp17c.jpg"
-                            class="card-img-top"
-                            />
-                            
+
+                        <div class=" mb-4" style="position: relative;">
+                          <img src="/assets/img/content/kp17b.jpg" class="img-center" alt="Image 2">
+                          <button class="slick-prev"></button>
+                          <button class="slick-next"> </button>
                         </div>
-                      
+
+                        <div class=" mb-4" style="position: relative;">
+                          <img src="/assets/img/content/kp17c.jpg" class="img-center" alt="Image 2">
+                          <button class="slick-prev"></button>
+                          <button class="slick-next"> </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
               </div>
-
-
-            
-
-              
-
 
 
 
@@ -315,6 +311,31 @@
     <!-- Template Main JS File -->
     <script src="/assets/js/main.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      // Initialize the slider
+      $(document).ready(function(){
+        $('.slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: $('.slick-prev'),
+          nextArrow: $('.slick-next'),
+        });
+  
+        // Handle button click events
+        $('.slick-prev').on('click', function(){
+          $('.slider').slick('slickPrev');
+        });
+  
+        $('.slick-next').on('click', function(){
+          $('.slider').slick('slickNext');
+        });
+      });
+    </script>
 
     <script>
       var typed = new Typed(".auto-type", {
