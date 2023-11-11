@@ -53,3 +53,12 @@
     margin-right: auto;
   }
   
+
+  @media (min-width: 354px) {
+    
+
+    img{
+      /* height: 40em; */
+        width: 100%;
+    }
+  }
