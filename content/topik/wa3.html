@@ -113,7 +113,7 @@
           </div>
 
           <div class="row content" data-aos="fade-up">
-            <h1>HASILKAN LAKARAN LUKISAN (FIGURE DRAWING)</h1>
+            <h1>HASILKAN LAKARAN LUKISAN</h1>
             <p>
               Setelah perantis mahir merajah figura asas, gerak kerja melakar
               lukisan boleh diteruskan. Dalam aktiviti kerja (WA3) perantis
@@ -133,27 +133,27 @@
             </p>
             <ul>
               <li>
-                a Fikir atau pilih posture/gaya fugura dalam keadaan
+                a) Fikir atau pilih posture/gaya fugura dalam keadaan
                 menarik.
               </li>
               <li>
-                b Kelebihan/kekurangan pelukis samada boleh free hand drawing
+                b) Kelebihan/kekurangan pelukis samada boleh free hand drawing
                 atau tekapan dengan mencari / mengambil gaya posture dalam
                 majalah atau rujukan internet.
               </li>
-              <li>c Pemilihan kertas dan medium mewarna yang betul.</li>
-              <li>d Langkah melukis yang sistematik.</li>
+              <li>c) Pemilihan kertas dan medium mewarna yang betul.</li>
+              <li>d) Langkah melukis yang sistematik.</li>
               <li>
-                e Pembahagian struktur posisi badan yang stabil kecuali sengaja
+                e) Pembahagian struktur posisi badan yang stabil kecuali sengaja
                 diubahsuai mengikut kepakaran adalah dibolehkan.
               </li>
-              <li>f Mewarna mengikut kaedah yang sesuai.</li>
+              <li>f) Mewarna mengikut kaedah yang sesuai.</li>
               <li>
-                g Melakukan perkara yang sangat ditil pada permukaan ilustrasi
+                g) Melakukan perkara yang sangat ditil pada permukaan ilustrasi
                 seperti bahagian kulit, fabric, corak dan lain-lain.
               </li>
-              <li>h Memikirkan kesan arah cahaya dan pembentukkan ton.</li>
-              <li>i Menentukan kesan jatuhnya fabrik pada posisi badan.</li>
+              <li>h) Memikirkan kesan arah cahaya dan pembentukkan ton.</li>
+              <li>i) Menentukan kesan jatuhnya fabrik pada posisi badan.</li>
             </ul>
             <p>Video teknik melakar lukisan ilustrasi disediakan sebagai panduan dan rujukan</p>
             <p>Perantis perlulah mengulang siar video ini untuk sesi latihan.</p>
@@ -317,13 +317,16 @@
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">?</h5>
+                    <!-- <h5 class="card-title">?</h5> -->
+                    <!-- <button class="save-button" data-image-src="/assets/img/content/1wa3.jpg">Muat Turun</button> -->
                     <p class="card-text">Perantis boleh memuat turun gambar panduan merajah lakaran dan mencetaknya bagi tujuan latih tubi menghasilkan lakaran figura.</p>
                     <!-- <a
                       href="/content/topik/video_page/godet.html"
                       class="btn btn-primary"
                       >Lihat Video</a
                     > -->
+                    <button class="save-button" data-image-src="/assets/img/content/1wa3.jpg">Muat Turun</button>
+
                   </div>
                 </div>
               </div>
@@ -339,13 +342,15 @@
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">?</h5>
-                    <p class="card-text">?</p>
+                    <!-- <h5 class="card-title">?</h5>
+                    <p class="card-text">?</p> -->
                     <!-- <a
                       href="/content/topik/video_page/godet.html"
                       class="btn btn-primary"
                       >Lihat Video</a
                     > -->
+                    <button class="save-button" data-image-src="/assets/img/content/2wa3.jpg">Muat Turun</button>
+
                   </div>
                 </div>
               </div>
@@ -361,13 +366,15 @@
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">?</h5>
+                    <!-- <h5 class="card-title">?</h5> -->
                     <p class="card-text">Perantis boleh memuat turun gambar panduan merajah lakaran dan mencetaknya bagi tujuan latih tubi menghasilkan lakaran figura.</p>
                     <!-- <a
                       href="/content/topik/video_page/godet.html"
                       class="btn btn-primary"
                       >Lihat Video</a
                     > -->
+                    <button class="save-button" data-image-src="/assets/img/content/3wa3.jpg">Muat Turun</button>
+
                   </div>
                 </div>
               </div>
@@ -383,8 +390,8 @@
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">?</h5>
-                    <p class="card-text">?</p>
+                    <!-- <h5 class="card-title">?</h5>
+                    <p class="card-text">?</p> -->
                     <!-- <a
                       href="/content/topik/video_page/godet.html"
                       class="btn btn-primary"
@@ -405,7 +412,7 @@
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">?</h5>
+                    <!-- <h5 class="card-title">?</h5> -->
                     <p class="card-text">Perantis boleh memuat turun gambar panduan merajah lakaran dan mencetaknya bagi tujuan latih tubi menghasilkan lakaran figura.</p>
                     <!-- <a
                       href="/content/topik/video_page/godet.html"
@@ -490,6 +497,32 @@
         document.querySelector(".popup").style.display = "none";
       });
     </script>
+
+<script>
+  // Function to handle image saving
+  function saveImage(event) {
+      const imageSrc = event.target.getAttribute("data-image-src");
+
+      // Create an anchor element to trigger the download
+      const downloadLink = document.createElement("a");
+      downloadLink.href = imageSrc;
+      downloadLink.download = "image.jpg"; // You can customize the file name here
+      downloadLink.style.display = "none";
+
+      // Append the anchor to the body and click it to trigger the download
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+
+      // Remove the anchor element
+      document.body.removeChild(downloadLink);
+  }
+
+  // Add a click event listener to all "Save" buttons
+  const saveButtons = document.querySelectorAll(".save-button");
+  saveButtons.forEach((button) => {
+      button.addEventListener("click", saveImage);
+  });
+</script>
     <!-- <script>
   document.onscroll = function() 
 {
