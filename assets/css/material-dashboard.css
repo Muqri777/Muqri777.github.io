@@ -210,6 +210,9 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 20px;
+  /* text-align: center; */
+  
 }
 
 abbr[title] {
@@ -2669,6 +2672,8 @@ progress {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+
 
 @media (max-width: 575.98px) {
   .table-responsive-sm {
