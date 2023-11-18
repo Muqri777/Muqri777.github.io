@@ -221,10 +221,33 @@ h5{
                 </tr>
               </table>
             </div>
+            <div class="row content" data-aos="fade-up">
+              <div class="row mb-4">
+                <div class="col-md-12">
+                  <div class="card mb-4">
+                    <img
+                      src="/assets/img/content/tugimg.JPG"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">?</h5> -->
+                      <!-- <p class="card-text">Hasil perkembangan idea bersumberkan satu inspirasi iaitu pakaian tentera yang bertemakan MILITARY GRADE.</p> -->
+                      <!-- <button class="save-button" data-image-src="/assets/img/content/military.jpeg.jpg">Muat Turun</button> -->
+                      <!-- <a
+                        href="/content/topik/video_page/godet.html"
+                        class="btn btn-primary"
+                        >Lihat Video</a
+                      > -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <h5>
               TUGASAN 1: ANALISA KAJIAN</h5>
               <p>Perantis dikehendaki merancang cadangan kajian dengan mengisi borang analisa kajian berdasarkan pilihan subjek kajian dan penentuan tema masing masing. Sila memuat turun borang analisa yang disediakan.</p>
-            
+              <button class="save-button" data-image-src="/content/aktiviti/file/">Muat Turun Borang</button>
+              <!-- <button class="save-button" data-image-src="/content/aktiviti/file/BORANG 2 MUAT TURUN.pdf">Muat Turun Borang 2</button> -->
           </div>
 
           
@@ -329,6 +352,33 @@ h5{
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 });
+</script>
+
+
+<script>
+  // Function to handle image saving
+  function saveImage(event) {
+      const imageSrc = event.target.getAttribute("data-image-src");
+
+      // Create an anchor element to trigger the download
+      const downloadLink = document.createElement("a");
+      downloadLink.href = imageSrc;
+      downloadLink.download = "tugasan_1.pdf"; // You can customize the file name here
+      downloadLink.style.display = "none";
+
+      // Append the anchor to the body and click it to trigger the download
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+
+      // Remove the anchor element
+      document.body.removeChild(downloadLink);
+  }
+
+  // Add a click event listener to all "Save" buttons
+  const saveButtons = document.querySelectorAll(".save-button");
+  saveButtons.forEach((button) => {
+      button.addEventListener("click", saveImage);
+  });
 </script>
  <!-- <script>
   document.onscroll = function() 
