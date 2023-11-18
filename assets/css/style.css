@@ -85,7 +85,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  background: rgba(179, 182, 201, 0.9);
 }
 
 #header.header-transparent {
@@ -93,7 +93,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(42, 44, 57, 0.9);
+  background: rgba(156, 160, 183, 0.9);
 }
 
 #header .logo h1 {
@@ -347,7 +347,10 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url('/assets/img/bg/human1.jpg');
+  background-image: url('/assets/img/content/utamabg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url('/assets/img/bg/human1.jpg'); */
   /* background: linear-gradient(0deg, rgb(22, 40, 162) 0%, rgb(51, 54, 74) 100%); */
 
   
@@ -1347,7 +1350,10 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
+  
+
+  /* align-items: center; */
 }
 
 .contact .info i {
@@ -1369,14 +1375,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #2a2c39;
+  color: #ffffff;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #555974;
+  color: #ffffff;
 }
 
 .contact .info .email,
@@ -1532,6 +1538,11 @@ section {
 
   .breadcrumbs ol li {
     display: inline-block;
+  }
+  .popup{
+
+    font-size: 15px;
+
   }
 }
 
